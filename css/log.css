@@ -1,0 +1,76 @@
+/* Räknar in padding och border i storleken */
+* {
+    box-sizing: border-box;
+}
+
+/* Utseende på allt inom body */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-image: url(../bilder/svampplockning3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Utseende på huvudinnehållet */
+main {
+    width: 350px;
+    padding: 30px;
+    background-color: bisque;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Gör formuläret till en kolumn */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Utseende på texten framför fälten */
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Utseende på inmatningsfälten */
+input {
+    padding: 10px;
+    border: 1px solid darkgoldenrod;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* Utseende på knappen */
+button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: lightsalmon;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Ändrar färg när muspekaren är över knappen */
+button:hover {
+    background-color: tomato;
+}
+
+/* Centrerar välkomstmeddelandet */
+#welcome-message {
+    text-align: center;
+}
+
+/* Gömmer element med klassen hidden */
+.hidden {
+    display: none;
+}
