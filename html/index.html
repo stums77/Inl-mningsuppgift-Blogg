@@ -1,73 +1,38 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
-
-    <!-- Anger teckenkodning -->
     <meta charset="UTF-8">
-
-    <!-- Gör sidan anpassad för olika skärmstorlekar -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Titel som visas i webbläsarens flik -->
-    <title>Svampletarna</title>
-
-    <!-- Kopplar HTML till CSS -->
-    <link rel="stylesheet" href="../css/log.css">
-
-    <!-- Kopplar HTML till JavaScript -->
-    <script src="../js/log.js" defer></script>
-
+    <title>Svampletarna - Startsida</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-
-    <!-- Huvudinnehållet på sidan -->
+    <header>
+        <h1>Svampletarna</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Startsida</a></li>
+            <li><a href="./pages/svampar.html">Svampförteckning</a></li>
+            <li><a href="./pages/forvaxling.html">Förväxlingssvampar</a></li>
+            <li><a href="./pages/minasvampar.html">Mina svampar</a></li>
+        </ul>
+    </nav>
     <main>
-
-            <!-- Inloggningsdelen -->
-            <div id="Inloggning">
-
-                <h1>Logga in</h1>
-
-                <!-- Formulär för inloggning -->
-                <form id="login-form">
-
-                    <!-- Text för namnfältet -->
-                    <label for="name">Namn</label>
-
-                    <!-- Fält där användaren skriver sitt namn -->
-                    <input type="text" id="name" placeholder="Namn" required>
-
-                    <!-- Text för lösenordsfältet -->
-                    <label for="password">Lösenord</label>
-
-                    <!-- Fält där användaren skriver sitt lösenord -->
-                    <input type="password" id="password" placeholder="Lösenord" required>
-
-                    <!-- Knapp för att logga in -->
-                    <button type="submit">Logga in</button>
-
-                </form>
-
-                <!-- Här visas eventuella felmeddelanden -->
-                <p id="message"></p>
-
-            </div>
-
-            <!-- Sida som visas när användaren är inloggad -->
-            <div id="welcome-sida" class="hidden">
-
-                <h1>Inloggad</h1>
-
-                <!-- Här visas välkomstmeddelandet -->
-                <p id="welcome-message"></p>
-
-                <!-- Knapp för att logga ut -->
-                <button id="logout-button">Logga ut</button>
-
-            </div>
-
+        <section class="intro">
+            <article>
+                <h2>Välkommen till Svampletarna</h2>
+                <p>Varmt välkommen till föreningen Svampletarnas hemsida! Här kan du utforska svampar i våran
+                    svampförteckning, läsa på om olika typer av förväxlingssvampar samt spara svampar i en egen list.
+                </p>
+            </article>
+        </section>
     </main>
-    
+    <footer>
+        <p>&copy;Svampletarna 2026 </p>
+    </footer>
 </body>
+
 </html>

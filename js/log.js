@@ -30,17 +30,8 @@ loginForm.addEventListener("submit", function(event) {
         // Sparar användarens namn i localStorage
         localStorage.setItem("inloggadAnvandare", inmatatNamn);
     
-    // Gömmer inloggningen
-        inloggning.classList.add("hidden");
-
-        // Visar den inloggade sidan
-        welcomeSida.classList.remove("hidden");
-
-        // Tömmer formuläret
-        loginForm.reset();
-
-        // Tar bort eventuellt felmeddelande
-        message.textContent = "";
+    // Går till startsidan
+        window.location.href = "index.html";
 
     } else {
 

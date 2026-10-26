@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blogg | Svampletarna</title>
+
+    <link rel="stylesheet" href="../css/blogg.css">
+    <script src="blog.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Svampletarna</h1>
+    </header>
+
+    <nav aria-label="Huvudmeny">
+        <ul>
+            <li><a href="./index.html">Startsida</a></li>
+            <li><a href="svampar.html">Svampförteckning</a></li>
+            <li><a href="forvaxling.html">Förväxlingssvampar</a></li>
+            <li><a href="minasvampar.html">Mina svampar</a></li>
+            <li><a href="blogg.html" aria-current="page">Blogg</a></li>
+            <li><a href="log.html" id="login-link">Logga in</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="intro">
+            <h2>Svampletarnas blogg</h2>
+            <p>
+                Dela dina svampfynd, läs andras berättelser
+                och diskutera svamp!
+            </p>
+        </section>
+
+        <section id="create-section" class="panel" hidden>
+            <h2>Skriv ett blogginlägg</h2>
+
+            <form id="post-form">
+                <label for="post-title">Titel</label>
+                <input
+                    id="post-title"
+                    name="title"
+                    type="text"
+                    maxlength="100"
+                    required
+                >
+
+                <label for="post-text">Ditt inlägg</label>
+                <textarea
+                    id="post-text"
+                    name="text"
+                    rows="5"
+                    maxlength="5000"
+                    required
+                ></textarea>
+
+                <button type="submit">Publicera inlägg</button>
+            </form>
+        </section>
+
+        <section aria-labelledby="posts-heading">
+            <h2 id="posts-heading">Senaste inläggen</h2>
+
+            <p id="login-message" role="status"></p>
+
+            <div id="posts-container" class="posts-container"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Svampletarna 2026</p>
+    </footer>
+
+</body>
+</html>
