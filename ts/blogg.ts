@@ -1,3 +1,4 @@
+export {};
 
 interface BlogComment {
     id: string;
