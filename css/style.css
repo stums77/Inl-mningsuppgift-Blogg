@@ -28,7 +28,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/forest.jpg.jpg");
+    background-image: url("../bilder/forest.jpg.jpg");
     background-size: cover;
     background-position: center;
     border: 2px solid var(--darkBrown);
