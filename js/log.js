@@ -9,6 +9,8 @@ const welcomeSida = document.getElementById("welcome-sida");
 const message = document.getElementById("message");
 const welcomeMessage = document.getElementById("welcome-message");
 const logoutButton = document.getElementById("logout-button");
+const backHomeLogin = document.getElementById("back-home-login");
+const backHomeWelcome = document.getElementById("back-home-welcome");
 
 // När användaren trycker på "Logga in"
 loginForm.addEventListener("submit", function(event) {
@@ -31,7 +33,7 @@ loginForm.addEventListener("submit", function(event) {
         localStorage.setItem("inloggadAnvandare", inmatatNamn);
     
     // Går till startsidan
-        window.location.href = "index.html";
+        window.location.href = "../index.html";
 
     } else {
 
@@ -57,6 +59,9 @@ logoutButton.addEventListener("click", function() {
 
     // Tömmer eventuellt felmeddelande
     message.textContent = "";
+
+    // Visar länk tillbaka till Startsidan
+    backHomeLogin.classList.remove("hidden");
 });
 
 // Kollar om det redan finns en sparad användare
@@ -75,4 +80,7 @@ if (sparadAnvandare) {
 
     // Visar den inloggade sidan
     welcomeSida.classList.remove("hidden");
+
+    // Visar länk tillbaka till Startsidan
+    backHomeWelcome.classList.remove("hidden");
 }
