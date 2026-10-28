@@ -42,6 +42,9 @@ loginForm.addEventListener("submit", function(event) {
 
         // Tömmer lösenordsfältet
         document.getElementById("password").value = "";
+
+        // Visar länk tillbaka till Startsidan
+        backHomeLogin.classList.remove("hidden");
     }
 });
 

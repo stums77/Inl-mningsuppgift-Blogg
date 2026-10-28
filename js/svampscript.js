@@ -103,7 +103,7 @@ function createArticles(data){
         
         //Bild har egen hantering --> Resten sköts med createElement()
         const imageElement = document.createElement("img");
-        imageElement.src = "../images/" + svamp.bild;
+        imageElement.src = "../bilder/" + svamp.bild;
         imageElement.alt = "Bild på " + svamp.svenskt_namn;
         articleElement.appendChild(imageElement);
 
@@ -140,7 +140,7 @@ function showMyShrooms(myShrooms) {
         
         //Bild har egen hantering --> Resten sköts med createElement()
         const imageElement = document.createElement("img");
-        imageElement.src = "../images/" + svamp.bild;
+        imageElement.src = "../bilder/" + svamp.bild;
         imageElement.alt = "Bild på " + svamp.svenskt_namn;
         articleElement.appendChild(imageElement);
 
