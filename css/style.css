@@ -53,6 +53,7 @@ nav {
 /* Navigation för mobil */
 nav ul {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 10px;
     list-style: none;
@@ -68,6 +69,7 @@ nav li {
 
 nav a {
     display: block;
+    white-space: nowrap;
     padding: 15px;
     text-align: center;
     text-decoration: none;
